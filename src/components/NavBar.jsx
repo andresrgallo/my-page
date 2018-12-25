@@ -19,7 +19,10 @@ const Nav = styled.nav`
     text-align: center
 		li a {
       font-size: 12px
-      color: black;
+      color: white;
+      &:hover {
+        color: orange
+      }
 		}
   }
 	}
