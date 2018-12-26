@@ -1,25 +1,61 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Section = styled.section`
+	background: #2b2b2b;
+	height: 70vh;
+`;
+
+const Row = styled.div`
+	display: flex;
+	color: white;
+	width: 95%;
+	max-width: 1020px;
+	margin: 0 auto;
+`;
+
+const MyPic = styled.img`
+	width: 100px;
+	height: 120px;
+	border-radius: 100%;
+	margin-top: 2.3733333333rem;
+`;
+
+const Hero = styled.div`
+	width: 25%;
+	text-align: center;
+`;
+
+const MainAbout = styled.div`
+	width: 75%;
+	p {
+		font-size: large;
+		line-height: 30px;
+		color: #7a7a7a;
+	}
+`;
+
+const H2 = styled.h2`
+	font: 22px/30px 'opensans-bold', sans-serif;
+	margin-bottom: 12px;
+`;
+
 const About = props => {
 	let resumeData = props.resumeData;
-	const Row = styled.div`
-		display: flex;
-	`;
 
 	return (
 		<React.Fragment>
-			<section id="about">
+			<Section id="about">
 				<Row>
-					<div className="hero">
-						<img
+					<Hero>
+						<MyPic
 							className="profile-pic"
 							src="images/profilepic.png"
 							alt="my pic"
 						/>
-					</div>
-					<div className="main-about">
-						<h2>About Me</h2>
+					</Hero>
+					<MainAbout>
+						<H2>About Me</H2>
 						<p>
 							{' '}
 							I am a recent graduate from{' '}
@@ -38,7 +74,7 @@ const About = props => {
 						</p>
 						<div className="main-details">
 							<div className="contact-details">
-								<h2>Contact Details</h2>
+								<H2>Contact Details</H2>
 								<p className="address">
 									<span>{resumeData.name}</span>
 									<br />
@@ -54,9 +90,9 @@ const About = props => {
 								</p>
 							</div>
 						</div>
-					</div>
+					</MainAbout>
 				</Row>
-			</section>
+			</Section>
 		</React.Fragment>
 	);
 };

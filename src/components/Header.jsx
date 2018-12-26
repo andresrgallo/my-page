@@ -27,7 +27,7 @@ const H1 = styled.h1`
 `;
 
 const H3 = styled.h3`
-  font: 25px/1.9em 'librebaskerville-regular', serif;
+  font: 25px/1.9em 'Roboto', sans-serif;
   color: #a8a8a8;
   margin: 0 auto;
   padding-bottom: 30px

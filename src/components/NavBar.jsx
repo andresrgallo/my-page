@@ -49,7 +49,7 @@ class NavBar extends Component {
 							<a href="#">INTRO</a>
 						</li>
 						<li>
-							<a href="#">ABOUT</a>
+							<a href="#about">ABOUT</a>
 						</li>
 						<li>
 							<a href="#">RESUME</a>
