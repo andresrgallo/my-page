@@ -3,15 +3,12 @@ import styled from 'styled-components';
 
 const Section = styled.section`
 	background: #2b2b2b;
-	height: 70vh;
+	height: 80vh;
 `;
 
 const Row = styled.div`
 	display: flex;
 	color: white;
-	width: 95%;
-	max-width: 1020px;
-	margin: 0 auto;
 `;
 
 const MyPic = styled.img`
@@ -46,19 +43,14 @@ const About = props => {
 	return (
 		<React.Fragment>
 			<Section id="about">
-				<Row>
+				<Row className="row">
 					<Hero>
-						<MyPic
-							className="profile-pic"
-							src="images/profilepic.png"
-							alt="my pic"
-						/>
+						<MyPic src="images/profilepic.png" alt="my pic" />
 					</Hero>
 					<MainAbout>
 						<H2>About Me</H2>
 						<p>
-							{' '}
-							I am a recent graduate from{' '}
+							I am a recent graduate from
 							<a
 								href="https://coderacademy.edu.au/"
 								target="_blank"
@@ -72,23 +64,21 @@ const About = props => {
 							role that gave me the skills to lead teams and also solidified my
 							understanding of team cohesion.
 						</p>
-						<div className="main-details">
-							<div className="contact-details">
-								<H2>Contact Details</H2>
-								<p className="address">
-									<span>{resumeData.name}</span>
+						<div>
+							<H2>Contact Details</H2>
+							<p>
+								<span>{resumeData.name}</span>
+								<br />
+								<span>
+									{resumeData.address}
 									<br />
-									<span>
-										{resumeData.address}
-										<br />
-										{resumeData.suburbstate}
-									</span>
-									<br />
-									<span>mob: {resumeData.mobile}</span>
-									<br />
-									<span>email: {resumeData.email}</span>
-								</p>
-							</div>
+									{resumeData.suburbstate}
+								</span>
+								<br />
+								<span>mob: {resumeData.mobile}</span>
+								<br />
+								<span>email: {resumeData.email}</span>
+							</p>
 						</div>
 					</MainAbout>
 				</Row>

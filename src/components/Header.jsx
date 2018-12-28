@@ -66,7 +66,7 @@ const SocialIcons = styled.ul`
 
 const Header = props => {
 	return (
-		<TheHeader>
+		<TheHeader id="header">
 			<NavBar />
 			<H1>I am {props.resumeData.name}</H1>
 			<H3>

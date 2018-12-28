@@ -46,38 +46,38 @@ class NavBar extends Component {
 					</a>
 					<ul className="hide-on-med-and-down">
 						<li>
-							<a href="#">INTRO</a>
+							<a href="#header">INTRO</a>
 						</li>
 						<li>
 							<a href="#about">ABOUT</a>
 						</li>
 						<li>
-							<a href="#">RESUME</a>
+							<a href="#resume">RESUME</a>
 						</li>
 						<li>
-							<a href="#">MY WORKS</a>
+							<a href="#portfolio">MY WORKS</a>
 						</li>
 						<li>
-							<a href="#">CONTACT</a>
+							<a href="#contact">CONTACT</a>
 						</li>
 					</ul>
 				</Nav>
 
 				<ul className="sidenav" id="mobile-demo">
 					<li>
-						<a href="#">INTRO</a>
+						<a href="#header">INTRO</a>
 					</li>
 					<li>
-						<a href="#">ABOUT</a>
+						<a href="#about">ABOUT</a>
 					</li>
 					<li>
-						<a href="#">RESUME</a>
+						<a href="#resume">RESUME</a>
 					</li>
 					<li>
-						<a href="#">WORKS</a>
+						<a href="#portfolio">WORKS</a>
 					</li>
 					<li>
-						<a href="#">CONTACT</a>
+						<a href="#contact">CONTACT</a>
 					</li>
 				</ul>
 			</React.Fragment>
