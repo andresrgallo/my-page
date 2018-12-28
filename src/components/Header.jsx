@@ -44,9 +44,9 @@ const Hr = styled.hr`
 	border-color: rgba(150, 150, 150, 0.1);
 `;
 
-const SocialIcons = styled.ul`
+export const SocialIcons = styled.ul`
 	margin: 24px 0;
-	padding: 0;
+	padding: 0 0 120px 0;
 	font-size: 30px;
 	li {
 		display: inline-block;
@@ -64,6 +64,16 @@ const SocialIcons = styled.ul`
 	}
 `;
 
+export const Chevron = styled.a`
+	color: white;
+	svg {
+		font-size: 30px;
+		&:hover {
+			color: #11abb0;
+		}
+	}
+`;
+
 const Header = props => {
 	return (
 		<TheHeader id="header">
@@ -77,11 +87,7 @@ const Header = props => {
 				<a className="smoothscroll" href="#about">
 					start scrolling{' '}
 				</a>
-				and learn more{' '}
-				<a className="smoothscroll" href="#about">
-					about me
-				</a>
-				.
+				and learn more <a href="#about">about me</a>.
 			</H3>
 			<Hr />
 			<SocialIcons>
@@ -113,6 +119,9 @@ const Header = props => {
 					</a>
 				</li>
 			</SocialIcons>
+			<Chevron title="Down" href="#about">
+				<i class="fas fa-chevron-circle-down" />
+			</Chevron>
 		</TheHeader>
 	);
 };

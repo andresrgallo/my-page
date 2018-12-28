@@ -21,6 +21,9 @@ const ContactText = styled.div`
 		font-size: 80px;
 		margin: 0 40px;
 		color: white;
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
 		&:hover {
 			-webkit-transform: scale(1.3);
 			-ms-transform: scale(1.3);

@@ -50,7 +50,7 @@ const About = props => {
 					<MainAbout>
 						<H2>About Me</H2>
 						<p>
-							I am a recent graduate from
+							I am a recent graduate from&nbsp;
 							<a
 								href="https://coderacademy.edu.au/"
 								target="_blank"

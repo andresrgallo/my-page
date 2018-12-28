@@ -19,6 +19,16 @@ const Icon = styled.img`
 	margin: 40px;
 	width: auto;
 	height: 100px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	&:hover {
+		:hover {
+			height: 80px;
+			width: 100px;
+			margin: 30px;
+		}
+	}
 `;
 
 const Skills = styled.div`
