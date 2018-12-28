@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 const PortfolioSection = styled.section`
 	background: #ebeeee;
-	height: 110vh;
 `;
 
 const Works = styled.div`
@@ -13,12 +12,12 @@ const Works = styled.div`
 	flex-wrap: wrap;
 `;
 
-const H1 = styled.h1`
-	font: 18px/24px 'Monserrat', sans-serif;
+export const H1 = styled.h1`
+	font: 28px 'opensans bold', sans-serif;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-bottom: 48px;
-	color: #95a3a3;
+	margin-bottom: 90px;
+	color: #000000c7;
 `;
 
 const Card = styled.div`
@@ -111,7 +110,7 @@ const Portfolio = () => {
 	return (
 		<PortfolioSection id="portfolio">
 			<div className="row">
-				<H1>CHECK OUT SOME OF MY WORKS</H1>
+				<H1>Check Out Some Of My Works</H1>
 				<Works className="works">
 					<Modal
 						trigger={

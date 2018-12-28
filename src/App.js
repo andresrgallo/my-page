@@ -4,6 +4,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 import GlobalStyle from './theme/globalStyle';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
 				<About resumeData={resumeData} />
 				<Resume />
 				<Portfolio />
+				<Contact resumeData={resumeData} />
 			</div>
 		);
 	}
