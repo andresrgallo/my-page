@@ -43,7 +43,7 @@ const About = props => {
 	return (
 		<React.Fragment>
 			<Section id="about">
-				<Row className="row">
+				<Row className="the-row">
 					<Hero>
 						<MyPic src="images/profilepic.png" alt="my pic" />
 					</Hero>

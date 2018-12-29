@@ -48,7 +48,7 @@ const Contact = props => {
 				<H1>
 					<span>Get In Touch.</span>
 				</H1>
-				<ContactText className="row">
+				<ContactText className="the-row">
 					<i className="fas fa-envelope" />
 					<div>
 						<P>

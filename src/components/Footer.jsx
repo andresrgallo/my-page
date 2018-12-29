@@ -13,7 +13,7 @@ const Footer = () => {
 	return (
 		<React.Fragment>
 			<FooterSection>
-				<div className="row">
+				<div className="the-row">
 					<div>
 						<Chevron title="Back to Top" href="#header">
 							<i className="fas fa-chevron-circle-up" />

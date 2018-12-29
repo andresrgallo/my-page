@@ -111,7 +111,7 @@ const Overlay = styled.div`
 const Portfolio = () => {
 	return (
 		<PortfolioSection id="portfolio">
-			<div className="row">
+			<div className="the-row">
 				<H1>Check Out Some Of My Works</H1>
 				<Works>
 					<Modal

@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   section {
     padding-top: 60px
   }
-  .row {
+  .the-row {
     width: 95%;
     max-width: 1020px;
     margin: 0 auto;

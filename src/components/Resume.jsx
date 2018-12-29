@@ -77,7 +77,7 @@ const Resume = () => {
 			<section id="resume">
 				{/* Education
       ----------------------------------------------- */}
-				<Education className="row">
+				<Education className="the-row">
 					<HeaderCol>
 						<H1>
 							<span>Education</span>
@@ -115,7 +115,7 @@ const Resume = () => {
 				{/* End Education */}
 				{/* Work
       ----------------------------------------------- */}
-				<Work className="row">
+				<Work className="the-row">
 					<HeaderCol>
 						<H1>
 							<span>Work</span>
@@ -138,7 +138,7 @@ const Resume = () => {
 				{/* End Work */}
 				{/* Skills
       ----------------------------------------------- */}
-				<Skills className="row">
+				<Skills className="the-row">
 					<HeaderCol>
 						<H1>
 							<span>Skills</span>
