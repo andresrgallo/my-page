@@ -26,7 +26,7 @@ const Hero = styled.div`
 const MainAbout = styled.div`
 	width: 75%;
 	p {
-		font-size: large;
+		font: 16px/24px 'Montserrat', sans-serif;
 		line-height: 30px;
 		color: #7a7a7a;
 	}

@@ -16,7 +16,7 @@ const Footer = () => {
 				<div className="row">
 					<div>
 						<Chevron title="Back to Top" href="#header">
-							<i class="fas fa-chevron-circle-up" />
+							<i className="fas fa-chevron-circle-up" />
 						</Chevron>
 						<SocialIcons style={{ padding: 0 }}>
 							<li>

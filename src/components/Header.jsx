@@ -5,31 +5,77 @@ import styled from 'styled-components';
 import img from './images/header-background.jpeg';
 
 const TheHeader = styled.header`
-  min-height: 500px;
-  width: 100%;
-  height: 100vh;
-  color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(${img}) no-repeat top center;
-  background-size: cover !important;
-  -webkit-background-size: cover !important;
-  text-align: center;
-  overflow: hidden;
-  }
-  `;
+	min-height: 500px;
+	width: 100%;
+	height: 100vh;
+	color: white;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url(${img}) no-repeat top center;
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	text-align: center;
+	overflow: hidden;
+	.invisible {
+		visibility: hidden;
+	}
+	.opaque {
+		background-color: #333333a8;
+		animation: fade 0.1s;
+		-moz-animation: fade 0.1s; /* Firefox */
+		-webkit-animation: fade 0.1s; /* Safari and Chrome */
+		-o-animation: fade 0.1s; /* Opera */
+	}
+	@keyframes fade {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+	@-moz-keyframes fade {
+		/* Firefox */
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+	@-webkit-keyframes fade {
+		/* Safari and Chrome */
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+	@-o-keyframes fade {
+		/* Opera */
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
+`;
 
 const H1 = styled.h1`
 	font: 50px/1.1em 'opensans-bold', sans-serif;
 	color: #fff;
 	letter-spacing: -2px;
 	margin: 0 auto 18px auto;
+	font-weight: 200;
 	padding: 130px 0 30px 0;
 `;
 
 const H3 = styled.h3`
   font: 25px/1.9em 'Roboto', sans-serif;
   color: #a8a8a8;
-  margin: 0 auto;
+	margin: 0 auto;
+	font-weight: 200;
   padding-bottom: 30px
   width: 50%;
   span {
@@ -75,6 +121,25 @@ export const Chevron = styled.a`
 `;
 
 const Header = props => {
+	//Navbar onScroll fade
+
+	window.onscroll = function() {
+		var h = document.getElementById('header').clientHeight;
+		var y = window.scrollY;
+		var nav = document.getElementById('navbar');
+
+		if (y > h * 0.2 && y < h && window.outerWidth > 768) {
+			nav.classList.add('invisible');
+			nav.classList.remove('opaque');
+		} else {
+			if (y < h * 0.2) {
+				nav.classList.remove('opaque', 'invisible');
+			} else {
+				nav.classList.remove('invisible');
+				nav.classList.add('opaque');
+			}
+		}
+	};
 	return (
 		<TheHeader id="header">
 			<NavBar />
@@ -119,8 +184,8 @@ const Header = props => {
 					</a>
 				</li>
 			</SocialIcons>
-			<Chevron title="Down" href="#about">
-				<i class="fas fa-chevron-circle-down" />
+			<Chevron href="#about">
+				<i className="fas fa-chevron-circle-down" />
 			</Chevron>
 		</TheHeader>
 	);

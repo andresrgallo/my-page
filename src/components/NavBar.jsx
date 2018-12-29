@@ -3,10 +3,12 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
-	background-color: transparent;
+
+  background-color: transparent;
   box-shadow: 0 0;
   display: flex;
-  justify-content: center;
+	justify-content: center;
+	position: fixed;
   letter-spacing: 2.5px;
   .sidenav-trigger {
     color: orange
@@ -40,7 +42,7 @@ class NavBar extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Nav className="nav-wrapper">
+				<Nav id="navbar">
 					<a href="#" data-target="mobile-demo" className="sidenav-trigger">
 						<i className="material-icons">menu</i>
 					</a>

@@ -93,7 +93,7 @@ const Resume = () => {
 						</ItemDetail>
 						<ItemDetail>
 							<h3>Sydney Institute of ERP</h3>
-							<p className="info">
+							<p>
 								<em>SAP Process Integration TERP course</em>&nbsp; February 2012
 							</p>
 						</ItemDetail>
@@ -124,7 +124,7 @@ const Resume = () => {
 					<DetailsCol>
 						<ItemDetail>
 							<h3>JobReady</h3>
-							<p className="info">
+							<p>
 								<em>Junior Developer Intern </em>August 2018
 							</p>
 							<p>
@@ -145,9 +145,9 @@ const Resume = () => {
 						</H1>
 					</HeaderCol>
 					<DetailsCol>
-						<div className="main-skills">
+						<div>
 							<Ul>
-								<li className="js--wp-2">
+								<li>
 									<Icon src="icons/html1.png" alt="HTML Icon" />
 								</li>
 								<li>

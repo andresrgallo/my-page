@@ -49,10 +49,9 @@ const Contact = props => {
 					<span>Get In Touch.</span>
 				</H1>
 				<ContactText className="row">
-					<i class="fas fa-envelope" />
-					<div className="two columns header-col" />
-					<div className="ten columns">
-						<P className="lead">
+					<i className="fas fa-envelope" />
+					<div>
+						<P>
 							Please do not hesitate in sending me a message at{' '}
 							{resumeData.email}, I would like to hear from you.
 						</P>

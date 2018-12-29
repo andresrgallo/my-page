@@ -39,6 +39,8 @@ const Img = styled.img`
 const InImg = styled.img`
 	margin: 0 auto;
 	height: 210px;
+	width: 400px;
+	padding-bottom: 20px;
 `;
 
 const Center = styled.div`
@@ -111,7 +113,7 @@ const Portfolio = () => {
 		<PortfolioSection id="portfolio">
 			<div className="row">
 				<H1>Check Out Some Of My Works</H1>
-				<Works className="works">
+				<Works>
 					<Modal
 						trigger={
 							<Button>
@@ -122,7 +124,10 @@ const Portfolio = () => {
 											<h5>Ruby Course Application</h5>
 											<p>Ruby Coding Basics</p>
 										</div>
-										<i class="fas fa-search-plus" style={{ color: 'white' }} />
+										<i
+											className="fas fa-search-plus"
+											style={{ color: 'white' }}
+										/>
 									</Overlay>
 								</Card>
 							</Button>
@@ -165,7 +170,10 @@ const Portfolio = () => {
 									<Overlay className="overlay">
 										<h5>Rails Teachme Web App</h5>
 										<p>Ruby-on-Rails Devise Sendgrid Stripe Postgresql</p>
-										<i class="fas fa-search-plus" style={{ color: 'white' }} />
+										<i
+											className="fas fa-search-plus"
+											style={{ color: 'white' }}
+										/>
 									</Overlay>
 								</Card>
 							</Button>
@@ -216,7 +224,10 @@ const Portfolio = () => {
 									<Overlay className="overlay">
 										<h5>MERN Food Forum Web App</h5>
 										<p>Nodejs Express Mongodb React</p>
-										<i class="fas fa-search-plus" style={{ color: 'white' }} />
+										<i
+											className="fas fa-search-plus"
+											style={{ color: 'white' }}
+										/>
 									</Overlay>
 								</Card>
 							</Button>
@@ -262,7 +273,10 @@ const Portfolio = () => {
 									<Overlay className="overlay">
 										<h5>Unique RealEstate App</h5>
 										<p>Nodejs Express React</p>
-										<i class="fas fa-search-plus" style={{ color: 'white' }} />
+										<i
+											className="fas fa-search-plus"
+											style={{ color: 'white' }}
+										/>
 									</Overlay>
 								</Card>
 							</Button>

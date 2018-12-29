@@ -3,6 +3,9 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   @import url(‘https://fonts.googleapis.com/css?family=Montserrat|Roboto');
  
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     padding: 0;
     margin: 0;
@@ -34,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
 
   //Modals custom styling
   .modal {
-    max-height: 75%;
+    max-height: 120%;
     width: 35%;
     padding: 0 20px;
   }
