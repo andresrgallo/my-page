@@ -18,6 +18,9 @@ export const H1 = styled.h1`
 	text-align: center;
 	margin-bottom: 90px;
 	color: #000000c7;
+	@media (max-width: 600px) {
+		font-size: 18px;
+	}
 `;
 
 const Card = styled.div`
@@ -182,7 +185,7 @@ const Portfolio = () => {
 						<div>
 							<Center>
 								<InImg
-									src="images/portfolio/modals/m-teachapp.jpeg"
+									src="images/portfolio/modals/m-teachapp.jpg"
 									alt="teach-me app"
 								/>
 							</Center>

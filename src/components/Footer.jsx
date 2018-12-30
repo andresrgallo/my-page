@@ -9,6 +9,9 @@ const Footer = () => {
 		padding: 48px 0;
 		background-color: #101010;
 		text-align: center;
+		@media (max-width: 1200px) {
+			padding: 10px 0;
+		}
 	`;
 	return (
 		<React.Fragment>

@@ -1,14 +1,53 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+section {
+	padding-top: 60px;
+}
+.the-row {
+	width: 95%;
+	max-width: 1020px;
+	margin: 0 auto;
+}
+/* buttons at modals within portfolio section */
+.btn {
+	background-color: transparent;
+	box-shadow: 0 0 transparent;
+	color: black;
+	text-transform: none;
+	height: 280px;
+	width: 340px;
+	margin-bottom: 30px;
+}
+.btn:hover {
+	background-color: transparent;
+	box-shadow: 0 0 transparent;
+}
+
+/* Modals custom styling */
+.modal {
+	max-height: 120%;
+	width: 35%;
+	padding: 0 20px;
+}
+.modal-close {
+	height: 30px;
+	text-align: right;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }

@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Section = styled.section`
+	@media (max-width: 600px) {
+		padding-top: 20px;
+	}
+`;
+
 const Education = styled.div`
 	display: flex;
 	margin-bottom: 48px;
@@ -29,6 +35,10 @@ const Icon = styled.img`
 			margin: 30px;
 		}
 	}
+	@media (max-width: 600px) {
+		margin: 10px;
+		height: 60px;
+	}
 `;
 
 const Skills = styled.div`
@@ -49,14 +59,27 @@ const H1 = styled.h1`
 		border-bottom: 3px solid #11abb0;
 		padding-bottom: 6px;
 	}
+	@media (max-width: 768px) {
+		font-size: 18px;
+		line-height: 0px;
+	}
+	@media (max-width: 600px) {
+		font-size: 14px;
+	}
 `;
 
 const HeaderCol = styled.div`
 	width: 20%;
+	@media (max-width: 600px) {
+		width: 30%;
+	}
 `;
 
 const DetailsCol = styled.div`
 	width: 80%;
+	@media (max-width: 600px) {
+		width: 70%;
+	}
 `;
 
 const ItemDetail = styled.div`
@@ -69,12 +92,28 @@ const ItemDetail = styled.div`
 		margin-bottom: 18px;
 		margin-top: 9px;
 	}
+	@media (max-width: 768px) {
+		h3 {
+			font-size: 18px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	@media (max-width: 600px) {
+		h3 {
+			font-size: 14px;
+		}
+		p {
+			font-size: 12px;
+		}
+	}
 `;
 
 const Resume = () => {
 	return (
 		<React.Fragment>
-			<section id="resume">
+			<Section id="resume">
 				{/* Education
       ----------------------------------------------- */}
 				<Education className="the-row">
@@ -175,7 +214,7 @@ const Resume = () => {
 						</div>
 					</DetailsCol>
 				</Skills>
-			</section>
+			</Section>
 		</React.Fragment>
 	);
 };

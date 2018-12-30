@@ -4,6 +4,16 @@ import styled from 'styled-components';
 const Section = styled.section`
 	background: #2b2b2b;
 	height: 80vh;
+	@media (max-width: 1200px) {
+		height: 40vh;
+	}
+	@media (max-width: 768px) {
+		height: 60vh;
+	}
+	@media (max-width: 600px) {
+		height: 75vh;
+		padding-top: 20px;
+	}
 `;
 
 const Row = styled.div`
@@ -16,11 +26,18 @@ const MyPic = styled.img`
 	height: 120px;
 	border-radius: 100%;
 	margin-top: 2.3733333333rem;
+	@media (max-width: 600px) {
+		width: 80px;
+		height: 95px;
+	}
 `;
 
 const Hero = styled.div`
 	width: 25%;
 	text-align: center;
+	@media (max-width: 600px) {
+		width: 30%;
+	}
 `;
 
 const MainAbout = styled.div`
@@ -30,11 +47,21 @@ const MainAbout = styled.div`
 		line-height: 30px;
 		color: #7a7a7a;
 	}
+	@media (max-width: 600px) {
+		width: 65%;
+		p {
+			font-size: 10px;
+			line-height: 20px;
+		}
+	}
 `;
 
 const H2 = styled.h2`
 	font: 22px/30px 'opensans-bold', sans-serif;
 	margin-bottom: 12px;
+	@media (max-width: 600px) {
+		font-size: 18px;
+	}
 `;
 
 const About = props => {

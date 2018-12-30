@@ -60,6 +60,15 @@ const TheHeader = styled.header`
 			opacity: 0;
 		}
 	}
+	@media (max-width: 1200px) {
+		height: auto;
+	}
+	@media (max-width: 768px) {
+		height: 70vh;
+	}
+	@media (max-width: 600px) {
+		height: 75vh;
+	}
 `;
 
 const H1 = styled.h1`
@@ -69,6 +78,10 @@ const H1 = styled.h1`
 	margin: 0 auto 18px auto;
 	font-weight: 200;
 	padding: 130px 0 30px 0;
+	@media only screen and (max-width: 600px) {
+		font-size: 28px;
+		padding: 100px 0 30px 0;
+	}
 `;
 
 const H3 = styled.h3`
@@ -80,7 +93,13 @@ const H3 = styled.h3`
   width: 50%;
   span {
     color: white;
-  }
+	}
+	@media only screen and (max-width: 768px) {
+		width: 70%;
+	}
+	@media only screen and (max-width: 600px) {
+		font-size: 14px;
+	}
 `;
 
 const Hr = styled.hr`
@@ -94,6 +113,13 @@ export const SocialIcons = styled.ul`
 	margin: 24px 0;
 	padding: 0 0 120px 0;
 	font-size: 30px;
+	@media only screen and (max-width: 768px) {
+		padding: 0 0 60px 0;
+	}
+	@media only screen and (max-width: 600px) {
+		padding: 0 0 20px 0;
+		margin-top: 0;
+	}
 	li {
 		display: inline-block;
 		margin: 0 15px;
@@ -107,6 +133,11 @@ export const SocialIcons = styled.ul`
 		a {
 			color: white;
 		}
+		@media only screen and (max-width: 600px) {
+			a {
+				font-size: 20px;
+			}
+		}
 	}
 `;
 
@@ -116,6 +147,11 @@ export const Chevron = styled.a`
 		font-size: 30px;
 		&:hover {
 			color: #11abb0;
+		}
+	}
+	@media (max-width: 600px) {
+		svg {
+			font-size: 20px;
 		}
 	}
 `;

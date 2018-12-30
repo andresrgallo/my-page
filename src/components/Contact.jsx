@@ -3,6 +3,9 @@ import styled from 'styled-components';
 
 const ContactSection = styled.section`
 	background: #191919;
+	@media (max-width: 600px) {
+		padding-top: 20px;
+	}
 `;
 
 const H1 = styled.h1`
@@ -12,6 +15,10 @@ const H1 = styled.h1`
 	margin-bottom: 60px;
 	color: white;
 	font-weight: 300;
+	@media (max-width: 600px) {
+		font-size: 18px;
+		margin-bottom: 0px;
+	}
 `;
 
 const ContactText = styled.div`
@@ -31,6 +38,13 @@ const ContactText = styled.div`
 			color: orange;
 		}
 	}
+	@media (max-width: 600px) {
+		svg {
+			font-size: 30px;
+			margin: 0 20px;
+		}
+		padding-bottom: 30px;
+	}
 `;
 
 const P = styled.p`
@@ -38,6 +52,9 @@ const P = styled.p`
 	color: #6e7881;
 	margin-bottom: 18px;
 	margin-top: 9px;
+	@media (max-width: 600px) {
+		font-size: 12px;
+	}
 `;
 
 const Contact = props => {

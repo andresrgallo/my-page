@@ -26,7 +26,18 @@ const Nav = styled.nav`
         color: orange
       }
 		}
-  }
+	}
+	margin-top: 0;
+	
+`;
+
+const Ul = styled.ul`
+	background-color: #333333a8;
+	li a {
+		color: white;
+	}
+	@media only screen and (max-width: 600px) {
+		width: 150px;
 	}
 `;
 
@@ -65,7 +76,7 @@ class NavBar extends Component {
 					</ul>
 				</Nav>
 
-				<ul className="sidenav" id="mobile-demo">
+				<Ul className="sidenav" id="mobile-demo">
 					<li>
 						<a href="#header">INTRO</a>
 					</li>
@@ -81,7 +92,7 @@ class NavBar extends Component {
 					<li>
 						<a href="#contact">CONTACT</a>
 					</li>
-				</ul>
+				</Ul>
 			</React.Fragment>
 		);
 	}
