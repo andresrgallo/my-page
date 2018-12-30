@@ -72,4 +72,7 @@ code {
 	.modal-close {
 		width: 280px;
 	}
+	.modal .modal-content {
+		padding: 10px;
+	}
 }

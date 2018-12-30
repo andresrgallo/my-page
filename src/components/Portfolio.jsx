@@ -71,6 +71,9 @@ const P = styled.p`
 	font: 14px/24px 'Monserrat', sans-serif;
 	color: #292525d6;
 	margin-bottom: 20px;
+	@media (max-width: 600px) {
+		font-size: 10px;
+	}
 `;
 
 const H4 = styled.h4`
