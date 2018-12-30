@@ -44,6 +44,15 @@ const InImg = styled.img`
 	height: 210px;
 	width: 400px;
 	padding-bottom: 20px;
+	@media (max-width: 1200px) {
+		width: 350px;
+	}
+	@media (max-width: 768px) {
+		width: 300px;
+	}
+	@media (max-width: 600px) {
+		width: 250px;
+	}
 `;
 
 const Center = styled.div`
