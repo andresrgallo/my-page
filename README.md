@@ -15,4 +15,4 @@ Font Awesome Icons were added to the project too.
 
 All animations and efects were done using vanilla CSS and Javascript.
 
-See the live project at https://andresrgallo.netlify.com.
+See the live project at https://andresrg.netlify.com.
