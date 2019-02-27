@@ -42,7 +42,7 @@ const Img = styled.img`
 const InImg = styled.img`
 	margin: 0 auto;
 	height: 210px;
-	width: 400px;
+	width: 300px;
 	padding-bottom: 20px;
 	@media (max-width: 1200px) {
 		width: 350px;
@@ -64,7 +64,7 @@ const Link = styled.a`
 	letter-spacing: 0.5px;
 	font-size: 16px;
 	font-weight: 700;
-	padding-right: 10px;
+	padding-right: 25px;
 `;
 
 const P = styled.p`
@@ -269,6 +269,73 @@ const Portfolio = () => {
 							<div>
 								<Link
 									href="https://foodforumco.netlify.com/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									WEBSITE
+								</Link>
+							</div>
+						</div>
+					</Modal>
+					<Modal
+						trigger={
+							<Button>
+								<Card>
+									<Img alt="To-Do App" src="images/portfolio/todo-app.png" />
+									<Overlay className="overlay">
+										<h5>MERN To-Do Web App</h5>
+										<p>Nodejs Express Mongodb React</p>
+										<i
+											className="fas fa-search-plus"
+											style={{ color: 'white' }}
+										/>
+									</Overlay>
+								</Card>
+							</Button>
+						}
+					>
+						<div>
+							<Center>
+								<InImg
+									src="images/portfolio/modals/todo-app.png"
+									alt="To-Do App"
+								/>
+							</Center>
+							<div>
+								<H4>MERN To-Do Web App</H4>
+								<P>
+									Back-end built on Nodejs, with Mongodb as the database and
+									Express framework for a robust API. Built the API based on a
+									Restful architecture, with all models tested using Jest and
+									Supertest libraries. The Front-end was built with React and
+									styled using the styled components, materialize-css and
+									material-ui libraries. Picked Axios api for dealing with http
+									requests and nodejs http interface. Enzyme library was used
+									for testing some of the components.{' '}
+									<b>
+										To access the app, at login, type 'guest@mail.com' as the
+										email and 'password' as the password or register if you
+										wish.
+									</b>
+								</P>
+							</div>
+							<div>
+								<Link
+									href="https://github.com/andresrgallo/to-do-api"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									GITHUB - API
+								</Link>
+								<Link
+									href="https://github.com/andresrgallo/to-do-client"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									GITHUB - CLIENT
+								</Link>
+								<Link
+									href="https://mytodoslist.netlify.com"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
